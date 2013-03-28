@@ -1,0 +1,141 @@
+# -----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+#
+#
+# converted by cvpubdef from HOLDINGS_POS: atpR
+#
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a|110|-6|Entidad||b|
+b|a|111|-6|Congreso||b|
+b|a||-6|Autor||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|130|-6|Titulo Agr||b|
+b|t|240|-6|Titulo Agr||b|
+b|t||-6|Titulo||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+b|p|270|-6|Direccion||b|
+b|p||-6|Publicac||b|
+#
+# end HOLDINGS_POS
+#
+#
+# next line added by cvpubdef
+b|H|||||
+b|T|||||
+#
+b|e||-6|Edicion||b|
+b|r|306|-6|Hora||b|
+b|r|307|-6|Horas||b|
+b|r|310|-6|Frecuencia||b|
+b|r|315|-6|Frecuencia||b|
+b|r|321|-6|Frecuencia||b|
+b|r|350|-6|||b|
+b|r|362|-6|Fecha Public||b|
+b|r||-6|Descripcion||b|
+b|s||-6|Coleccion||b|
+b|n|501|-6|Con:||b|
+b|n|502|-6|Tesis||b|
+b|n|504|-6|Bibliografia||b|
+b|n|505|-6|Contenidos||b|
+b|n|506|-6|Acceso||b|
+b|n|508|-6|Creditos||b|
+b|n|510|-6|Indexado En||b|
+b|n|511[^1]|-6|Interprete||b|
+b|n|5111|-6|Reparto||b|
+b|n|516|-6|Tipo Fichero||b|
+b|n|520|-6|Resumen||b|
+b|n|521|-6|Audiencia||b|
+b|n|524|-6|Citado Como||b|
+b|n|533|-6|Reproduccion||b|
+b|n|538|-6|Sistema Det||b|
+b|n|550|-6|Publicado Con||b|
+b|n|555[^0]|-6|Indices||b|
+b|n|5550|-6|Ayudas||b|
+b|n|561|-6|Procedencia||b|
+b|n|586|-6|Premio||b|
+b|n|59[0-9]|-6|Nota Local||b|
+b|n||-6|Nota||b|
+b|y|856|u|Url||b|
+b|y|[^8]..|u|||b|
+b|y|8[^5].|u|||b|
+b|y|85[^6]|u|||b|
+b|y||u|Misc.||b|
+b|d|655|-6|Genero||b|
+b|d|69[0-9]|-6|Materia Local||b|
+b|d||-6|Materia||b|
+b|b||-6|Autor Sec||b|
+b|u|210|-6|Tit Clave||b|
+b|u|222|-6|Tit Clave||b|
+b|u|2460|-6|Nota||b|
+b|u|2461 |-6|Nota||b|
+b|u|2461[01]|-6|||b|
+b|u|24612|-6|Tit Distint||b|
+b|u|24613|-6|Tit Altern||b|
+b|u|24614|-6|Tit Port||b|
+b|u|24615|-6|Tit A{228}nad||b|
+b|u|24616|-6|Titulo||b|
+b|u|24617|-6|Tit Actual||b|
+b|u|24618|-6|Tejuelo||b|
+b|u|2462.|-6|||b|
+b|u|24700|-6|Tit Anterior||b|
+b|u|24701|-6|||b|
+b|u|24710|-6|Tit Anterior||b|
+b|u|24711|-6|||b|
+b|u||-6|Titulo Sec||b|
+b|h||-6|Existencia||b|
+b|x|780.0|-uwxyz6|Continua||b|
+b|x|780.1|-uwxyz6|Cont En Parte||b|
+b|x|780.2|-uwxyz6|Sustituido||b|
+b|x|780.3|-uwxyz6|Reemp Pte A:||b|
+b|x|780.4|-uwxyz6|Fusion De||b|
+b|x|780.5|-uwxyz6|Absorbido||b|
+b|x|780.6|-uwxyz6|Parc Absor||b|
+b|x|780.7|-uwxyz6|Separata De||b|
+b|x||-uwxyz6|Titulo Ant||b|
+b|z|785.0|-uwxyz6|Contin  Por||b|
+b|z|785.1|-uwxyz6|Cont En Parte||b|
+b|z|785.2|-uwxyz6|Sustit Por||b|
+b|z|785.3|-uwxyz6|Sus En Parte||b|
+b|z|785.4|-uwxyz6|Absorv Por||b|
+b|z|785.5|-uwxyz6|Abs En Parte||b|
+b|z|785.6|-uwxyz6|Dividido En||b|
+b|z|785.7|-uwxyz6|Fundido Con||b|
+b|z|785.8|-uwxyz6|Cambiado A||b|
+b|z||-uwxyz6|Titulo Poster||b|
+b|w||-6|Obras Rela||b|
+b|i|020|-6c|ISBN||b|
+b|i|022|-6c|ISSN||b|
+b|i|028|-6c|N{487} Musica||b|
+b|i||-6c|Standard No.||b|
+b|g||-6|N{486} Doc Gov||b|
+c|i||+|Identidad||b|&nbsp;
+c|C||&|||b|&nbsp;
+c|Q||||b|
+c|$||+|Ubicaci{226}on||b|
+c|h||-8x|Existencia||b|
+c|2||+|Latest Received||b|&nbsp;
+c|3||+|Latest Received||b|
+c|Q||||b|
+#
+# end pubdef
+#
+#
+# -----------------------------------------------------
+# Converted by cvpubdef from item_col_width: 1(23),Cv#(30)[Call Number],%,![Message]
+# -----------------------------------------------------
+i|1||||29|b|
+i|C||||0|b|&nbsp;
+i|v||||0|b|&nbsp;
+i|#|||Call Number|38|b|
+i|Q||||b|
+i|%||||0|b|
+i|!|||Message|0|b|
+#
+#end converted webpub.def

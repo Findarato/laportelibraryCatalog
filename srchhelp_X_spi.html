@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Spanish Millennium Advanced Search</title>
+
+</head>
+<body bgcolor="#FFFFFF" alink="#000099" vlink="#0033cc">
+<DIV ALIGN="center">
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<!--{patron}-->
+<P>
+</TR>
+
+<TR>
+<TD COLSPAN=3>
+
+<IMG SRC="/screens/millogo.gif" WIDTH=100 HEIGHT=82 ALT="" BORDER="0"
+ALIGN="left"><CENTER><IMG SRC="/screens/logo.gif" WIDTH=400 HEIGHT=79 ALT=""
+BORDER="0"></CENTER>
+<BR>
+<IMG SRC="/screens/grndot.gif" WIDTH=90% HEIGHT=1 ALT="" BORDER="0"
+ALIGN="left"></TD>
+</TR>
+<TR>
+<TD VALIGN="top" width=25%>
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=0 VALIGN="top" ALIGN="left">
+<TD>
+<font size=+1 color=green face="arial">Opciones del Cat&aacute;logo</font><p>
+<A HREF="/screens/mainmenu_spi.html"><font face="arial" color=blue>Men&uacute; Principal</A><BR>
+<A HREF="/screens/libinfo_spi.html"><font face="arial" color=blue>Informacion de la
+Biblioteca</A></font><BR>
+<A HREF="/suggest*spi/"><font face="arial" color=blue>Sugerencias</A></font><BR>
+<A HREF="/acquire*spi/"><font face="arial" color=blue>Libros a Adquirir</A></font><BR>
+<A HREF="/ftlist*spi/"><font face="arial" color=blue>Bibliograf&iacute;as Seleccionadas</font></A><BR>
+<A HREF="/patroninfo*spi/"><font face="arial" color=blue>Ver su Registro</font></A><BR>
+</TD>
+</TR>
+</TABLE>
+
+</TD><TD VALIGN="top">
+<IMG SRC="/screens/grndot.gif" WIDTH=1 HEIGHT=350 ALT="LINE" BORDER="0"
+ALIGN="top"></TD>
+<TD VALIGN="center" ALIGN="center">
+<CENTER>
+
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=10 VALIGN="top">
+<TR>
+
+<!--{msg}-->
+<TD ALIGN="left" VALIGN="top">
+<TABLE BORDER=0 CELLPADDING=9 ALIGN="center" BGCOLOR="99CCFF">
+<TR><TD ALIGN=center colspan=2>
+<FORM ACTION=/search*spi/X METHOD=GET>
+Introduzca la(s) <b>PALABRA(S)</b>, despu&eacute;s pulse <b>Retorno</b> o <b>Buscar</b>
+<br>
+<!--{search}-->
+</TD>
+</TR>
+<TR><TD>
+<!--{lang}-->
+</TD>
+<TD>
+<!--{mattype}-->
+</TD></TR>
+<TR><TD ALIGN=center>
+<!--{branch}-->
+<BR></TD>
+<TD>
+<!--{publish}-->
+<TR><TD ALIGN=center colspan=2>
+<!--{DOCDATE}-->
+</TD></TR>
+<TR><TD ALIGN=center colspan=2>
+<!--{sort}-->
+<!--{submit}-->
+</FORM></TD></TR></TABLE>
+<p>
+<center>
+<A HREF="/search*spi/Y"><IMG SRC="/screens/simple_spi.gif" BORDER=0 ALT="[SIMPLE
+SEARCH]"></a>&nbsp;
+<A HREF="/search*spi/"><IMG SRC="/screens/newsrch_spi.gif" BORDER=0 ALT="[START OVER]"></A>
+</center>
+</TABLE>
+</TR>
+<TR>
+<TD COLSPAN=3>
+<p>
+<TABLE CELLPADDING=3 CELLSPACING=2 WIDTH="100%">
+<TR>
+<TH WIDTH=10%></TH>
+<TH WIDTH=40%>Introduzca en Palabras para Buscar: 
+</TH>
+
+<TH WIDTH=50%>EJEMPLOS</TH></TR>
+<TR>
+<TD WIDTH=100><b>ADYACENCIA </b></TD>
+<TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+M&uacute;ltiples palabras son buscadas juntas como una frase.</FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>
+<ul>
+<li>Espa&ntilde;a Tribunal Supremo
+</ul></TT></TD>
+<TR>
+<TD WIDTH=100><b>TRUNCAMIENTO</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Las Palabras pueden ser truncadas por la derecha usando un asterisco. Use un asterisco simple para truncar entre 1-5 caracteres. Use doble asterisco para un truncamiento completo..</FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>
+<ul>
+<li>ambient* polici*
+<li>Fyodor Dost**
+</ul>
+</TT>
+</TD>
+<TR>
+<TD WIDTH=100><b>OPERADORES </b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Use "and" u "or" para especificar m&uacute;ltiples palabras en cualquier campo, en cualquier orden. Use "and not" para excluir palabras. Los par&eacute;ntesis agrupan palabras cuando se usan operadores Booleanos.</FONT></TD>
+<TD BGCOLOR="#99CCFF">
+<TT>
+<ul>
+<li>(bibliografia anotada) and ni&ntilde;o*<BR>
+<li>(espa&ntilde;a or portugal or francia) and (aventura* and not vaciones)
+</ul>
+</TT></TD>
+<TR>
+<TD WIDTH=100><b>PROXIMIDAD </b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Use "near" para especificar palabras que est&eacute;n cerca la una de la otra, en cualquier orden. Use "within #" para especificar t&eacute;rminos que aparecen en el registro, pr&oacute;ximos un m&aacute;ximo de "n" palabras uno del otro.
+</FONT></TD>
+<TD BGCOLOR="#99CCFF">
+<TT>
+<ul>
+<li>Madrid near universidad
+<li>Espa&ntilde;a within 3 econom*
+</ul>
+</TT></TD>
+<TR>
+<TD WIDTH=100><b>CAMPOS</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Especifique los campos en los que buscar, usando una abreviatura del campo. Los campos disponibles en esta base de datos son a: (autor), t: (t&iacute;tulo), s: (materia), n: (notas).</FONT></TD>
+<TD BGCOLOR="#99CCFF">
+<TT>
+<ul>
+<li>(a:twain) and (t:huck*)<br>
+<li>(a:Espa&ntilde;a or a:Portugal) and (s:discapacitad* or s:disminuid*)
+</ul>
+</TT></TD></TR>
+</TABLE>
+
+</TD>
+<TD VALIGN="top"></TD>
+</TR>
+</TABLE>
+<p>
+<IMG SRC="/screens/botlogo.gif">
+</DIV>
+</body>
+</html>

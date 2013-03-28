@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd ">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Version 2003.07.02 -->
+<head>
+<title>Cat&aacute;logo Web Millennium</title>
+<meta http-equiv="Content-Type" content="text/html" />
+<link rel="stylesheet" href="/screens/styles.css" type="TEXT/CSS" />
+</head>
+
+<body onLoad="document.forms[0].elements[1].focus();">
+<!--Begin the top logo table-->
+<!--TIP: this data should match the data used by the TOPLOGO web option-->
+<!--You will need to make any changes to all static HTML pages and to toplogo.html.-->
+<!--The Web server will need to be restarted for changes to toplogo.html to take effect.-->
+<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+<tr>
+<td bgcolor="#0132A7" colspan="2"><img src="/screens/spacer.gif" height="2" width="1" alt="" /></td>
+</tr>
+<tr valign="middle">
+<td width="*" align="left" class="pageNavArea" bgcolor="#3B6EE0">
+<!--Beginning navigation bar at the top of the page-->
+<a href="/"><img src="/screens/home_spi.gif" width="80" height="40" alt="Inicio" border="0" /></a><a href="/screens/help_index_spi.html"><img src="/screens/help_spi.gif" width="80" height="40" alt="Ayuda" border="0" /></a> 
+<a href="/search*spi"><img src="/screens/newsrch_spi.gif" width="80" height="40" alt="Nueva Consulta" border="0" /></a> 
+<!--End of the top navigation bar-->
+</td>
+<td width="209" align="right" class="pageNavArea" bgcolor="#3B6EE0"> 
+<!-- Beginning of library logo area -->
+<a href="/"><img src="/screens/logo.gif" width="166" height="25" border="0" alt="Innovative Interfaces, Inc. " /></a>&nbsp;
+<!-- End of library logo area -->
+</td>
+</tr>
+</table>
+<!--End the top logo table-->
+
+<br />
+<!--Begin the search box area-->
+<form class="unpadded" action="/search*spi/a?a" name="search" id="search">
+<table width="90%" border="0" cellspacing="0" cellpadding="3" align="center">
+<tr> 
+<td colspan="2" bgcolor="3B6EE0" class="pageNavArea"><img src="/screens/spacer.gif" border="0" width="1" height="1" alt="" /></td>
+</tr>
+<tr valign="top" class="pageMainArea">
+<td class="pageMainArea" colspan="2"> 
+<!--{patron}-->
+<!--{logout}-->
+<!--{msg}-->
+</td>
+</tr>
+<tr valign="top" class="pageMainArea"> 
+<td class="pageMainArea"> <span class="nowrap"><span class="pageInfoAreaHeader">Consultar&nbsp;Cat&aacute;logo&nbsp;Local</span></span> 
+</td>
+<td class="pageMainArea">Consulte los fondos de la biblioteca para encontrar libros, libros electr&oacute;nicos, recursos digitales, im&aacute;genes; revistas, y mucho m&aacute;s. </td>
+</tr>
+<tr valign="top"> 
+<td colspan="2" class="pageMainArea"> 
+<!--TIP: the list of indexes here should match the DROP_DOWN web option-->
+<!--TIP: this should be kept in sync with other mainmenu and opacmenu pages on which you've included a search input.-->
+<!--TIP: to add or change the options here, just add or delete the lines between the <option> tags-->
+<!--When adding or removing options, use the index tag for the value attribute of the option-->
+<select name="searchtype">
+<option value="X" selected="selected">Palabra Clave</option>
+<option value="t">T&iacute;tulo</option>
+<option value="a">Autor</option>
+<option value="d">Materia</option>
+<option value="c">Signatura</option>
+<option value="o">N&uacute;mero de Control</option>
+<option value="i">N&uacute;mero Normalizado (ISBN o ISBN)</option>
+<option value="g">CDU</option>
+<!-- Note: remove the "Course Reserves" options if library does not use Course Reserves product -->
+<option value="r">Nombre de Curso</option>
+<option value="p">Nombre de Profesor</option>
+<option value=".">N&uacute;mero de Registro</option>
+</select> <input maxlength="75" name="searcharg" size="25" /> 
+<!--{nosort}-->
+<!--{scope}-->
+<span class="nowrap">
+<input type="image" value="Submit" name="submit" src="/screens/go_but_spi.gif" border="0" align="middle" alt="Enviar Consulta" />
+&nbsp; &nbsp; &nbsp;<a href="/search*spi/X"><img src="/screens/advan_but_spi.gif" width="72" height="28" border="0" align="absmiddle" alt="Consulta Avanzada" /></a></span> 
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="3B6EE0" class="pageNavArea"><img src="/screens/spacer.gif" border="0" width="1" height="1" alt="" /></td>
+</tr>
+</table>
+</form>
+<!--Beginning main page content-->
+<br />
+<!-- This table contains three sub tables which control the layout of the columns -->
+<table align="center" width="90%" cellspacing="2" cellpadding="0" border="0">
+<tr>
+<td width="33%" valign="top">
+<!-- This is the table for the left column -->
+<table width="100%" cellspacing="0" cellpadding="1" border="0">
+<tr>
+<td colspan="2" align="center" class="pageDirectoryArea"> <a href="/search*spi"><img src="/screens/icon_search.gif" border="0" width="50" height="40" alt="" /></a> 
+<span class="pageMainAreaHeader">INFORMACI&Oacute;N</span> </td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="3B6EE0" height="3" class="pageNavArea"><img src="/screens/spacer.gif" border="0" width="1" height="3" alt="" /></td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<a href="/ftlist"><img src="/screens/icon_ftlist.gif" width="50" border="0" height="40" alt="" /></a>
+</td>
+<td>&nbsp;<a href="/ftlist*spi">Bibliograf&iacute;as Seleccionadas</a>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<!-- Note: remove the "Course Reserves" list item  if library does not use Course Reserves product -->
+<tr>
+<td width="20%" align="center">
+<a href="/screens/course_spi.html"><img src="/screens/icon_course.gif" width="50" border="0" height="40" alt="" /></a>
+</td>
+<td>&nbsp;<a href="/screens/course_spi.html">Reservas de Cursos</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<!-- Note: uncomment the "Other Resources" row if library has customized resources_index.html to highlight available other resources such as z39.50, ILL, etc. -->
+<tr><td width="20%" align="center"><a href="/screens/resources_index_spi.html"><img src="/screens/icon_resources.gif" width="50" border="0" height="40" alt="" /></a></td><td>&nbsp;<a href="/screens/resources_index_spi.html">Otros Recursos</a></td></tr><tr><td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td></tr>
+<tr>
+<td width="20%" align="center">
+<a href="/screens/help_index_spi.html"><img src="/screens/icon_help.gif" width="50" border="0" height="40" alt="" /></a>
+</td>
+<td>&nbsp;<a href="/screens/help_index_spi.html">Consejos de B&uacute;squeda</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+</table>
+</td>
+<!-- If you don't want a white background between the columns, change this bgcolor. -->
+<td bgcolor="ffffff" width="1px"></td>
+<td width="33%" valign="top">
+<!-- This is the table for the center column -->
+<table width="100%" cellspacing="0" cellpadding="1" border="0">
+<tr>
+<td colspan="2" align="center" class="pageDirectoryArea">
+<a href="/patroninfo*spi"><img src="/screens/icon_mylibrary.gif" width="50" border="0" height="40" alt="" /></a><span class="pageMainAreaHeader">MI BIBLIOTECA</span></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="3B6EE0" height="3" class="pageNavArea"><img src="/screens/spacer.gif" border="0" width="1" height="3" alt="" /></td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<a href="/patroninfo*spi"><img src="/screens/icon_mymill.gif" width="50" height="40" border="0" alt="" /></a>
+</td>
+<!-- Note: change "My Millennium" to "View your patron record" if library does not use My Millennium product -->
+<td>&nbsp;<a href="/patroninfo*spi">Mi Millennium</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<a href="/acquire*spi"><img src="/screens/icon_acquire.gif" border="0" width="50" height="40" alt="" /></a>
+</td>
+<td>&nbsp;<a href="/acquire*spi">Sugerir una compra</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<tr>
+<td width="20%" align="center">
+<a href="/suggest*spi"><img src="/screens/icon_suggest.gif" width="50" border="0" height="40" alt="" /></a>
+</td>
+<td>&nbsp;<a href="/suggest*spi">Hacer una sugerencia general</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<!-- Note: uncomment this row and insert the correct URL if library uses KidsOnline product -->
+<!-- <tr><td width="20%" align="center"><a href="#"><img src="/screens/icon_kidsonline.gif" width="50" border="0" height="40" alt="" /></a></td><td>&nbsp;<a href="#" class="KidsOnline">KidsOnline</a></td></tr><tr><td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td></tr> -->
+<!-- Note: uncomment this row if library uses Web OPAC in multiple languages -->
+<tr><td width="20%" align="center"><a href="/screens/langmenu_spi.html"><img src="/screens/icon_international.gif" width="50" border="0" height="40" alt="" /></a></td><td>&nbsp;<a href="/screens/langmenu_spi.html">Seleccione su Idioma</a></td></tr><tr><td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td></tr>
+</table>
+</td>
+<!-- If you don't want a white background between the columns, change this bgcolor. -->
+<td bgcolor="ffffff" width="1px"></td>
+<td width="33%" valign="top">
+<!-- This is the table for the right column -->
+<table width="100%" cellspacing="0" cellpadding="1" border="0">
+<tr>
+<td colspan="2" align="center">
+<a href="/screens/libinfo*spi.html"><img src="/screens/icon_library.gif" border="0" width="50" height="40" alt="" /></a><span class="pageMainAreaHeader">SOBRE LA BIBLIOTECA</span></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="3B6EE0" height="3" class="pageNavArea"><img src="/screens/spacer.gif" border="0" width="1" height="3" alt="" /></td>
+</tr>
+<tr>
+<td width="20%" align="center"><img src="/screens/icon_about.gif" width="50" height="40" alt="" /></td>
+<td>&nbsp;<a href="/screens/libinfo_spi.html">Informaci&oacute;n de la Biblioteca</a></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><img src="screens/blueline.gif" alt="" width="100%" height="1" /></td>
+</tr>
+<tr>
+<td width="20%" align="center"></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20%" align="center"></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--End of main page content-->
+<br />
+
+<!--Begin the bottom logo table-->
+<!--TIP: this data should match the data used by the BOTLOGO web option-->
+<table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+<tr valign="middle"> 
+<td align="center" class="pageNavArea" bgcolor="#3B6EE0"> 
+<!--Beginning text-only navigation bar at the bottom of the page-->
+<a href="/" class="pageNavAreaText">Inicio</a> | <a href="/screens/help_index_spi.html" class="pageNavAreaText">Ayuda</a> 
+<!--End of bottom navigation bar--> 
+</td>
+</tr>
+<tr>
+<td bgcolor="#0132A7"><img src="/screens/spacer.gif" height="1" width="1" alt="" /></td>
+</tr>
+</table>
+<!--End the bottom logo table--> 
+<p align="center" class="InnovativeCredit">Powered by <a href="http://www.iii.com" target="_blank">Innovative Interfaces, Inc.</a> 2003</p>
+</body>
+</html>

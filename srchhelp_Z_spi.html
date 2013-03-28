@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Spanish Millennium AltaVista Style Search</title>
+
+</head>
+<body bgcolor="#FFFFFF" alink="#000099" vlink="#0033cc">
+<DIV ALIGN="center">
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<!--{patron}-->
+<P>
+</TR>
+
+<TR>
+<TD COLSPAN=3>
+
+<IMG SRC="/screens/millogo.gif" WIDTH=100 HEIGHT=82 ALT="" BORDER="0"
+ALIGN="left"><CENTER><IMG SRC="/screens/logo.gif" WIDTH=400 HEIGHT=79 ALT=""
+BORDER="0"></CENTER>
+<BR>
+<IMG SRC="/screens/grndot.gif" WIDTH=90% HEIGHT=1 ALT="" BORDER="0"
+ALIGN="left"></TD>
+</TR>
+<TR>
+<TD VALIGN="top" width=25%>
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=0 VALIGN="top" ALIGN="left">
+<TD>
+<font size=+1 color=green face="arial">Opciones del Cat&aacute;logo</font><p>
+<A HREF="/screens/mainmenu_spi.html"><font face="arial" color=blue>Men&uacute; Principal
+</A><BR>
+<A HREF="/screens/libinfo_spi.html"><font face="arial" color=blue>Informacion de la Biblioteca</A></font><BR>
+<A HREF="/suggest*spi/"><font face="arial" color=blue>Informacion de la Biblioteca</A></font><BR>
+<A HREF="/acquire*spi/"><font face="arial" color=blue>Libros a Adquirir</A></font><BR>
+<A HREF="/ftlist*spi/"><font face="arial" color=blue>Bibliograf&iacute;as Seleccionadas</font></A><BR>
+<A HREF="/patroninfo*spi/"><font face="arial" color=blue>Ver su Registro</font></A><BR>
+</TD>
+</TR>
+</TABLE>
+
+</TD><TD VALIGN="top">
+<IMG SRC="/screens/grndot.gif" WIDTH=1 HEIGHT=250 ALT="LINE" BORDER="0"
+ALIGN="top"></TD>
+<TD VALIGN="center" ALIGN="center">
+<CENTER>
+
+<!--{msg}-->
+
+<TABLE BORDER=0 CELLSPACING=10 CELLPADDING=10 VALIGN="top">
+<TR>
+<TD ALIGN="left" VALIGN="top">
+Introduzca la(s) <b>PALABRA(S)</b>, despu&eacute;s pulse <b>Retorno</b> o <b>Buscar</b>
+<FORM ACTION=/search*spi/Z>
+<!--{search}-->
+<INPUT TYPE=HIDDEN NAME=SORT VALUE=S>
+<!--{submit}-->
+</FORM>
+<A HREF="/search*spi/X"><IMG SRC="/screens/advanced_spi.gif" BORDER=0 ALT="[ADVANCED
+SEARCH]"></a>&nbsp;
+<A HREF="/search*spi/Y"><IMG SRC="/screens/simple_spi.gif" BORDER=0 ALT="[SIMPLE
+SEARCH]"></a>
+<A HREF="/search*spi/"><IMG SRC="/screens/newsrch_spi.gif" BORDER=0 ALT="[START OVER]"></A>
+<p>
+</TR>
+</TABLE>
+</TABLE>
+
+<TABLE COLSPAN=3 CELLPADDING=10 CELLSPACING=2 bgcolor="#FFFFFF" WIDTH="100%">
+<TR>
+<TH WIDTH=10%></TH>
+<TH WIDTH=40%>Introduzca en Palabras para Buscar:</TH>
+<TH WIDTH=50%>EJEMPLOS</TH></TR>
+<TR>
+<TD WIDTH=100><b>ADYACENCIA</b></TD>
+<TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Para buscar m&uacute;ltiples palabras juntas como una frase, encierrelas entre comillas. Las b&uacute;squedas por defecto devolver&aacute;n registros que contengan cualquiera de los t&eacute;rminos de b&uacute;squeda introducidos (OR, por defecto). </FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>
+<ul>
+<li>"calentamiento global" (encuentra s&oacute;lo registros que contienen las palabras "calentamiento global" como una frase)<BR>
+<li>polucion cancer (encuentra cualquier registro que contiene "poluci&oacute;n" y cualquier registro que contiene "cancer")
+</ul>
+</TD>
+<TR>
+<TD WIDTH=100><b>TRUNCAMIENTO</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Las Palabras pueden ser truncadas por la derecha usando un asterisco. Use un asterisco simple para truncar entre 1-5 caracteres. Use doble asterisco para un truncamiento completo.</FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>
+<UL>
+<li>pobla*<BR>
+<li>dost** (encontrar&iacute;a, entre otros, "Dostoyevsky")
+</ul>
+</TT></TD>
+<TR>
+<TD WIDTH=100><b>OPERADORES</b></TD><TD BGCOLOR="#CCFF99"><FONT SIZE=-1>
+Estos no funcionar&aacute;n igual que los operadores Booleanos; s&oacute;lo afectar&aacute;n a una palabra y no modificar&aacute;n las relaciones entre las palabras. Use un + para requerir que una palabra est&eacute; presente, use un - para excluir una palabra, si no se especifica el operador que se usa es OR.</FONT></TD>
+<TD BGCOLOR="#99CCFF"><TT>
+<UL>
+<LI>nuclear +familia (encuentra cualquier registro con "nuclear" Y "familia", y cualquier registro con "familia")<BR>
+<LI>+nuclear +familia (encuentra cualquier registro con "nuclear" Y "familia")<BR>
+<LI>nuclear -familia (encuentra cualquier registro con "nuclear" Y NO "familia" y cualquier registro sin "familia")<BR>
+<LI>+nuclear -familia (encuentra cualquier registro con "nuclear" Y NO "familia")
+</UL>
+</TD>
+</TT>
+</FONT>
+</TABLE>
+
+</TD>
+<TD VALIGN="top"></TD>
+</TR>
+</TABLE>
+<p>
+<IMG SRC="/screens/botlogo.gif">
+</DIV>
+</body>
+</html>

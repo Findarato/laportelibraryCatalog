@@ -1,0 +1,68 @@
+
+VERSION="151@(#) makehtinfo 151.1@(#) 2/5/03 11:49:04";
+if [ "$MACHINE" = mips -o "$MACHINE" = ibm -o "$MACHINE" = hp ]
+then
+	AWK=awk
+else
+	AWK=nawk
+fi
+
+FINDINFO=`dolookup find.info | awk -F'|' '{ print $2 }'`
+if test -z "$FINDINFO"
+then
+	echo "Cannot find system library information file"
+	exit 1
+fi
+
+echo "Are you sure you want to replace all World Wide Web Library Information"
+echo "screens with Library Information screens from character based INNOPAC? \c"
+read YN
+
+case $YN in
+[Yy]) ;;
+*) echo "Aborting"; exit;;
+esac
+
+rm -f libinfo*.html
+genrec -O libname.$$ -x libname
+LIBNAME=`cat libname.$$`
+rm -f libname.$$
+$AWK '
+BEGIN { libname = "'"$LIBNAME"'"; }
+{ 
+	if ( $0 !~ /^\.H/ ) {
+        if(file ){
+           split( $0, flds, "\001" );
+           print flds[1] > file;
+           }
+	} else {
+		if( file ) {
+			print "</pre><A HREF=libinfo.html>Back to Library Information</A>" > file;
+			print "<br><A HREF=/>Back to Main Menu</A>" > file;
+			}
+		if( $1 == ".H" ) {
+			nfiles++;
+			if ( file ) close(file);
+			file = sprintf("libinfo_%02d.html",nfiles);
+			split( $0, flds, "\001" );
+			l[nfiles] = substr(flds[1],3);
+			print "<html>" > file
+			print "<title>" l[nfiles] "</title>" > file
+			print "<I>" libname "</I><br>" > file;
+			print "<b>" l[nfiles] "</b>" > file;
+			print "<PRE>" > file;
+			}
+		else file=0;
+	}
+}
+END {
+	print "<html><title>LIBRARY INFORMATION</title>" > "libinfo.html";
+	print "<I>" libname "</I><p>" > "libinfo.html";
+	print "INFORMATION on:\n<MENU>" > "libinfo.html";
+		for(i=1;i <= nfiles;i++) {
+		printf "<LI><A HREF=libinfo_%02d.html>%s</a>\n",i,l[i]>"libinfo.html";
+		}
+	print "</MENU>" > "libinfo.html";
+	print "<A HREF=\"/\">Back to Main Menu</A>" > "libinfo.html";
+	}' $FINDINFO
+

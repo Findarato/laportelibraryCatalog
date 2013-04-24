@@ -38,16 +38,17 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
-body {  font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:rgb(241,241,241);color:rgb(29,29,29); }
+body {  font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; 
+color:rgb(29,29,29); }
 
-body.bodybg { background:rgb(241,241,241); }
+body.bodybg { background:url("images/grey.png"); }
 
 /* Generated popup body */
 body > font { background:rgb(241,241,241); font-size:1.3em; line-height:2em; margin-left:3px; }
 
 body > br { line-height:0px; }
 
-body > div { background:rgb(241,241,241); padding-bottom:10px; padding-top:10px; }
+body > div { padding-bottom:10px; padding-top:10px; }
 
 body > div.mylistsSavePage { background:none; padding-bottom:0px; padding-top:0px; }
 
@@ -300,7 +301,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:rgb(241,241,241);background:rgba(241,241,241,.8); border-bottom:1px solid #ECECEC; font-size:.9187em;
+.briefcitCell { background:rgb(241,241,241);background:rgba(241,241,241,.6); border-bottom:1px solid #ECECEC; font-size:.9187em;
   -webkit-transition: all 300ms linear;
      -moz-transition: all 300ms linear;
       -ms-transition: all 300ms linear;
@@ -720,7 +721,7 @@ div .bibResourceSidebar { display:none; }
 
 .mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto;  }
 
-.minHeight { height:100%; width:100%; margin-left:auto; margin-right:auto; background:url("images/grey.png"); padding-bottom:0; padding-top:0; }
+.minHeight { height:100%; width:100%; margin-left:auto; margin-right:auto;  padding-bottom:0; padding-top:0; }
 
 .msg td { padding-top:3px; }
 
@@ -1014,8 +1015,6 @@ div.rssChannelEntries { border:none; background:rgb(241,241,241); }
 
 #topLinksList a:link, #topLinksList a:visited  { color: rgb(95,62,18);  font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
 
-#topLinksList a:active,#topLinksList a:hover   { background:#F2F2F2; color:#0091FF; text-decoration:underline; }
-
 #topLinksList li { list-style:none; padding:0; display:inline; }
 
 #topLinksList  { float:right; margin:0px; padding:0px; font-size:.9em; display:inline; }
@@ -1028,11 +1027,11 @@ div.rssChannelEntries { border:none; background:rgb(241,241,241); }
 
 #topMyLibraryList a:link, #topMyLibraryList a:visited, #toplogoMoreNav a:link, #toplogoMoreNav a:visited  { color: #5F3E09;  font-weight:bold; padding:6px 15px 3px 15px; text-decoration:none; width:auto; }
 
-#topMyLibraryList a:active,#topMyLibraryList a:hover, #toplogoMoreNav a:active, #toplogoMoreNav a:hover { background:#F2F2F2; color:#0091FF; text-decoration:underline; }
+#topMyLibraryList a:active,#topMyLibraryList a:hover, #toplogoMoreNav a:active, #toplogoMoreNav a:hover { background:transparent; color:#0091FF; text-decoration:underline; }
 
 #topMyLibraryList li { list-style:none; padding:0; display:inline; }
 
-.topNavClear { clear:both; height:1px; overflow:hidden; }
+.topNavClear { clear:both; height:1px; overflow:hidden; }  
 
 #topMyLibraryList { width: 100%; }
 
@@ -1091,7 +1090,7 @@ div#searchNavMenu { clear:both; float:right; background:#DDEECC; width:100%; }
 
 td.odd { background:#F8F8F8; }
 
-td.highlight { background:#FFFFE4; }
+td.highlight { background:rgba(204,255,255,.4); }
 
 /* for browse entries */
 
@@ -1154,19 +1153,4 @@ tr.highlight { background:#FFFFE4; }
   border-radius: 3px;
   -webkit-border-radius: 3px;
   background:rgb(240,240,240);
-}
-.browseSearchtool select,input[type="button"],.browseSearchtool input[type="submit"]{
-  width: auto;
-  padding: 5px;
-  font-size:1.1em;
-  border:1px rgb(29,29,29) solid;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  height:2.3em;
-  background:rgb(240,240,240);
-}
-.browseSearchtool input[type="button"],.browseSearchtool input[type="submit"]{
-  font-size:1.1em;
-  height:2.3em;
-  
 }

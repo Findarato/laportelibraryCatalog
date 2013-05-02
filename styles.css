@@ -1142,9 +1142,11 @@ tr.highlight { background:#FFFFE4; }
 /*Joe Added*/
  
 /*Removes the side sections*/
-.browseScreen tr:nth-child(2) td[valign="top"]{
-  display:none;  
-} 
+
+.browseResourceTable{
+	display:none;
+}
+
 .browseSearchtool input[type="text"]{
   width: 300px;
   padding: 5px;

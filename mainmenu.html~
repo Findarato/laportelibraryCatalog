@@ -44,7 +44,7 @@ obj.submit();
 <div class="browseSearchtool">
 <form action="/search/X" method="get" name="search" id="search">
 
-<input type="text" name="SEARCH" size="20" value="" placeholder="Search The Catalog"/>
+<input type="text" name="SEARCH" size="20" value="" placeholder="search catalog"/>
 
 <div class="formEntryArea">
 
